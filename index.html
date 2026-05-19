@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YiJu Support</title>
+  <meta
+    name="description"
+    content="Support and contact information for YiJu."
+  >
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f7fb;
+      --surface: rgba(255, 255, 255, 0.88);
+      --surface-border: rgba(33, 57, 99, 0.12);
+      --text: #10203a;
+      --muted: #5e6f8c;
+      --accent: #2f6df6;
+      --accent-soft: rgba(47, 109, 246, 0.12);
+      --shadow: 0 24px 60px rgba(17, 36, 77, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "SF Pro Display", "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(47, 109, 246, 0.18), transparent 32%),
+        radial-gradient(circle at top right, rgba(59, 186, 164, 0.12), transparent 24%),
+        linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .wrap {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    .hero {
+      display: grid;
+      gap: 18px;
+      padding: 32px;
+      border: 1px solid var(--surface-border);
+      border-radius: 28px;
+      background: var(--surface);
+      backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      width: fit-content;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 56px);
+      line-height: 0.96;
+      letter-spacing: -0.04em;
+    }
+
+    .subtitle {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .hero-grid,
+    .faq,
+    .links {
+      display: grid;
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .hero-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .card {
+      padding: 22px;
+      border: 1px solid var(--surface-border);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.92);
+    }
+
+    .card h2,
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      letter-spacing: -0.02em;
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .section-title {
+      margin: 36px 0 14px;
+      font-size: 20px;
+      letter-spacing: -0.03em;
+    }
+
+    .links {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      margin-top: 14px;
+      padding: 12px 16px;
+      border-radius: 14px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 36px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        padding-top: 24px;
+      }
+
+      .hero {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">YiJu Support</div>
+      <h1>Help for staying organized, one day at a time.</h1>
+      <p class="subtitle">
+        YiJu is a lightweight productivity app for planning daily tasks, managing reminders,
+        and keeping your schedule clear. If you need help, have feedback, or want to report
+        a bug, this page is the fastest way to reach the developer.
+      </p>
+
+      <div class="hero-grid">
+        <article class="card">
+          <h2>Contact</h2>
+          <p>Email support is available for bug reports, account questions, feature requests, and general feedback.</p>
+          <a class="button" href="mailto:e_qiujun@enn.cn">e_qiujun@enn.cn</a>
+        </article>
+
+        <article class="card">
+          <h2>Response Time</h2>
+          <p>Most support requests receive a reply within 3 business days. Please include your device model and iOS version when reporting an issue.</p>
+        </article>
+
+        <article class="card">
+          <h2>Current Version</h2>
+          <p>App Store release: YiJu 1.0</p>
+          <p>Build: 2</p>
+        </article>
+      </div>
+    </section>
+
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <section class="faq">
+      <article class="card">
+        <h3>How do I create a new entry or task?</h3>
+        <p>Open YiJu and use the main creation action on the home screen to add a new item, then save it to your daily list or schedule.</p>
+      </article>
+
+      <article class="card">
+        <h3>Why are notifications not appearing?</h3>
+        <p>Make sure notifications are enabled for YiJu in your iPhone Settings. If reminders still do not appear, send a message with your iOS version and a short description of the problem.</p>
+      </article>
+
+      <article class="card">
+        <h3>How can I report a bug or request a feature?</h3>
+        <p>Email <a href="mailto:e_qiujun@enn.cn">e_qiujun@enn.cn</a> with the subject line <strong>YiJu Support</strong>. Screenshots and short reproduction steps are very helpful.</p>
+      </article>
+    </section>
+
+    <h2 class="section-title">Additional Links</h2>
+    <section class="links">
+      <article class="card">
+        <h3>Privacy</h3>
+        <p>YiJu is designed to keep the experience simple and privacy-conscious. If you need a formal privacy policy page for App Store metadata, it can be added alongside this support site.</p>
+      </article>
+
+      <article class="card">
+        <h3>Developer Contact</h3>
+        <p>Developer: Qiu Jun</p>
+        <p>Email: <a href="mailto:e_qiujun@enn.cn">e_qiujun@enn.cn</a></p>
+      </article>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Qiu Jun. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>
